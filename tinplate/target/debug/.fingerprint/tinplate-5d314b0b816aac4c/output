@@ -1,0 +1,178 @@
+[codegen/src/lib.rs:44] call_method.into() = TokenStream [
+    Ident {
+        ident: "impl",
+        span: #50 bytes(880..891),
+    },
+    Literal { lit: Lit { kind: Str, symbol: "User", suffix: None }, span: Span { lo: BytePos(880), hi: BytePos(891), ctxt: #50 } },
+    Group {
+        delimiter: Brace,
+        stream: TokenStream [
+            Ident {
+                ident: "fn",
+                span: #50 bytes(880..891),
+            },
+            Ident {
+                ident: "call",
+                span: #50 bytes(880..891),
+            },
+            Group {
+                delimiter: Parenthesis,
+                stream: TokenStream [
+                    Punct {
+                        ch: '&',
+                        spacing: Alone,
+                        span: #50 bytes(880..891),
+                    },
+                    Ident {
+                        ident: "self",
+                        span: #50 bytes(880..891),
+                    },
+                    Punct {
+                        ch: ',',
+                        spacing: Alone,
+                        span: #50 bytes(880..891),
+                    },
+                    Ident {
+                        ident: "s",
+                        span: #50 bytes(880..891),
+                    },
+                    Punct {
+                        ch: ':',
+                        spacing: Alone,
+                        span: #50 bytes(880..891),
+                    },
+                    Ident {
+                        ident: "String",
+                        span: #50 bytes(880..891),
+                    },
+                    Punct {
+                        ch: ',',
+                        spacing: Alone,
+                        span: #50 bytes(880..891),
+                    },
+                    Ident {
+                        ident: "req",
+                        span: #50 bytes(880..891),
+                    },
+                    Punct {
+                        ch: ':',
+                        spacing: Alone,
+                        span: #50 bytes(880..891),
+                    },
+                    Ident {
+                        ident: "Request",
+                        span: #50 bytes(880..891),
+                    },
+                ],
+                span: #50 bytes(880..891),
+            },
+            Punct {
+                ch: '-',
+                spacing: Joint,
+                span: #50 bytes(880..891),
+            },
+            Punct {
+                ch: '>',
+                spacing: Alone,
+                span: #50 bytes(880..891),
+            },
+            Ident {
+                ident: "Response",
+                span: #50 bytes(880..891),
+            },
+            Group {
+                delimiter: Brace,
+                stream: TokenStream [
+                    Ident {
+                        ident: "match",
+                        span: #50 bytes(880..891),
+                    },
+                    Ident {
+                        ident: "s",
+                        span: #50 bytes(880..891),
+                    },
+                    Group {
+                        delimiter: Brace,
+                        stream: TokenStream [
+                            Literal { lit: Lit { kind: Str, symbol: "get", suffix: None }, span: Span { lo: BytePos(880), hi: BytePos(891), ctxt: #50 } },
+                            Punct {
+                                ch: '=',
+                                spacing: Joint,
+                                span: #50 bytes(880..891),
+                            },
+                            Punct {
+                                ch: '>',
+                                spacing: Alone,
+                                span: #50 bytes(880..891),
+                            },
+                            Ident {
+                                ident: "self",
+                                span: #50 bytes(880..891),
+                            },
+                            Punct {
+                                ch: '.',
+                                spacing: Alone,
+                                span: #50 bytes(880..891),
+                            },
+                            Ident {
+                                ident: "get",
+                                span: #0 bytes(911..914),
+                            },
+                            Group {
+                                delimiter: Parenthesis,
+                                stream: TokenStream [
+                                    Ident {
+                                        ident: "req",
+                                        span: #50 bytes(880..891),
+                                    },
+                                ],
+                                span: #50 bytes(880..891),
+                            },
+                            Literal { lit: Lit { kind: Str, symbol: "post", suffix: None }, span: Span { lo: BytePos(880), hi: BytePos(891), ctxt: #50 } },
+                            Punct {
+                                ch: '=',
+                                spacing: Joint,
+                                span: #50 bytes(880..891),
+                            },
+                            Punct {
+                                ch: '>',
+                                spacing: Alone,
+                                span: #50 bytes(880..891),
+                            },
+                            Ident {
+                                ident: "self",
+                                span: #50 bytes(880..891),
+                            },
+                            Punct {
+                                ch: '.',
+                                spacing: Alone,
+                                span: #50 bytes(880..891),
+                            },
+                            Ident {
+                                ident: "post",
+                                span: #0 bytes(1017..1021),
+                            },
+                            Group {
+                                delimiter: Parenthesis,
+                                stream: TokenStream [
+                                    Ident {
+                                        ident: "req",
+                                        span: #50 bytes(880..891),
+                                    },
+                                ],
+                                span: #50 bytes(880..891),
+                            },
+                        ],
+                        span: #50 bytes(880..891),
+                    },
+                ],
+                span: #50 bytes(880..891),
+            },
+        ],
+        span: #50 bytes(880..891),
+    },
+]
+{"message":"expected type, found `\"User\"`","code":null,"level":"error","spans":[{"file_name":"src/lib.rs","byte_start":880,"byte_end":891,"line_start":42,"line_end":42,"column_start":1,"column_end":12,"is_primary":true,"text":[{"text":"#[migrator]","highlight_start":1,"highlight_end":12}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"\u001b[0m\u001b[1m\u001b[38;5;9merror\u001b[0m\u001b[0m\u001b[1m: expected type, found `\"User\"`\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/lib.rs:42:1\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m42\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m#[migrator]\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;9m^^^^^^^^^^^\u001b[0m\n\n"}
+{"message":"no method named `call` found for type `User` in the current scope","code":{"code":"E0599","explanation":"This error occurs when a method is used on a type which doesn't implement it:\n\nErroneous code example:\n\n```compile_fail,E0599\nstruct Mouth;\n\nlet x = Mouth;\nx.chocolate(); // error: no method named `chocolate` found for type `Mouth`\n               //        in the current scope\n```\n"},"level":"error","spans":[{"file_name":"src/lib.rs","byte_start":867,"byte_end":879,"line_start":41,"line_end":41,"column_start":1,"column_end":13,"is_primary":false,"text":[{"text":"struct User;","highlight_start":1,"highlight_end":13}],"label":"method `call` not found for this","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"src/lib.rs","byte_start":1217,"byte_end":1221,"line_start":55,"line_end":55,"column_start":21,"column_end":25,"is_primary":true,"text":[{"text":"    assert_eq!(user.call(\"get\",req), Response::new(205,String::from(\"1.1\")));","highlight_start":21,"highlight_end":25}],"label":"method not found in `User`","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"items from traits can only be used if the trait is implemented and in scope","code":null,"level":"help","spans":[],"children":[],"rendered":null},{"message":"the following trait defines an item `call`, perhaps you need to implement it:\ncandidate #1: `std::ops::Fn`","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"\u001b[0m\u001b[1m\u001b[38;5;9merror[E0599]\u001b[0m\u001b[0m\u001b[1m: no method named `call` found for type `User` in the current scope\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/lib.rs:55:21\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m41\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0mstruct User;\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m------------\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12mmethod `call` not found for this\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m...\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m55\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m    assert_eq!(user.call(\"get\",req), Response::new(205,String::from(\"1.1\")));\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m                    \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;9m^^^^\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;9mmethod not found in `User`\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m= \u001b[0m\u001b[0m\u001b[1mhelp\u001b[0m\u001b[0m: items from traits can only be used if the trait is implemented and in scope\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m= \u001b[0m\u001b[0m\u001b[1mnote\u001b[0m\u001b[0m: the following trait defines an item `call`, perhaps you need to implement it:\u001b[0m\n\u001b[0m           candidate #1: `std::ops::Fn`\u001b[0m\n\n"}
+{"message":"aborting due to 2 previous errors","code":null,"level":"error","spans":[],"children":[],"rendered":"\u001b[0m\u001b[1m\u001b[38;5;9merror\u001b[0m\u001b[0m\u001b[1m: aborting due to 2 previous errors\u001b[0m\n\n"}
+{"message":"For more information about this error, try `rustc --explain E0599`.","code":null,"level":"failure-note","spans":[],"children":[],"rendered":"\u001b[0m\u001b[1mFor more information about this error, try `rustc --explain E0599`.\u001b[0m\n"}

@@ -1,0 +1,28 @@
+[package]
+name = "codegen-tests"
+version = "0.0.0"
+edition = "2018"
+publish = false
+[dependencies.codegen]
+path = "/home/taigen/Works/rustmvc/tinplate/codegen"
+default-features = false
+
+[dependencies.quote]
+version = "1.0"
+
+[dependencies.reftree]
+path = "/home/taigen/Works/rustmvc/tinplate/codegen/../reftree"
+
+[dependencies.syn]
+version = "1.0.15"
+features = ["full", "extra-traits"]
+
+[[bin]]
+name = "codegen-tests"
+path = "main.rs"
+
+[[bin]]
+name = "migrator"
+path = "/home/taigen/Works/rustmvc/tinplate/codegen/tests/expand/migrator.rs"
+
+[workspace]

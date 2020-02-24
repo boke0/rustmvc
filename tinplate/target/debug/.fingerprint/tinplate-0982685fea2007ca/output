@@ -1,0 +1,178 @@
+[codegen/src/lib.rs:44] call_method.into() = TokenStream [
+    Ident {
+        ident: "impl",
+        span: #43 bytes(880..891),
+    },
+    Literal { lit: Lit { kind: Str, symbol: "User", suffix: None }, span: Span { lo: BytePos(880), hi: BytePos(891), ctxt: #43 } },
+    Group {
+        delimiter: Brace,
+        stream: TokenStream [
+            Ident {
+                ident: "fn",
+                span: #43 bytes(880..891),
+            },
+            Ident {
+                ident: "call",
+                span: #43 bytes(880..891),
+            },
+            Group {
+                delimiter: Parenthesis,
+                stream: TokenStream [
+                    Punct {
+                        ch: '&',
+                        spacing: Alone,
+                        span: #43 bytes(880..891),
+                    },
+                    Ident {
+                        ident: "self",
+                        span: #43 bytes(880..891),
+                    },
+                    Punct {
+                        ch: ',',
+                        spacing: Alone,
+                        span: #43 bytes(880..891),
+                    },
+                    Ident {
+                        ident: "s",
+                        span: #43 bytes(880..891),
+                    },
+                    Punct {
+                        ch: ':',
+                        spacing: Alone,
+                        span: #43 bytes(880..891),
+                    },
+                    Ident {
+                        ident: "String",
+                        span: #43 bytes(880..891),
+                    },
+                    Punct {
+                        ch: ',',
+                        spacing: Alone,
+                        span: #43 bytes(880..891),
+                    },
+                    Ident {
+                        ident: "req",
+                        span: #43 bytes(880..891),
+                    },
+                    Punct {
+                        ch: ':',
+                        spacing: Alone,
+                        span: #43 bytes(880..891),
+                    },
+                    Ident {
+                        ident: "Request",
+                        span: #43 bytes(880..891),
+                    },
+                ],
+                span: #43 bytes(880..891),
+            },
+            Punct {
+                ch: '-',
+                spacing: Joint,
+                span: #43 bytes(880..891),
+            },
+            Punct {
+                ch: '>',
+                spacing: Alone,
+                span: #43 bytes(880..891),
+            },
+            Ident {
+                ident: "Response",
+                span: #43 bytes(880..891),
+            },
+            Group {
+                delimiter: Brace,
+                stream: TokenStream [
+                    Ident {
+                        ident: "match",
+                        span: #43 bytes(880..891),
+                    },
+                    Ident {
+                        ident: "s",
+                        span: #43 bytes(880..891),
+                    },
+                    Group {
+                        delimiter: Brace,
+                        stream: TokenStream [
+                            Literal { lit: Lit { kind: Str, symbol: "get", suffix: None }, span: Span { lo: BytePos(880), hi: BytePos(891), ctxt: #43 } },
+                            Punct {
+                                ch: '=',
+                                spacing: Joint,
+                                span: #43 bytes(880..891),
+                            },
+                            Punct {
+                                ch: '>',
+                                spacing: Alone,
+                                span: #43 bytes(880..891),
+                            },
+                            Ident {
+                                ident: "self",
+                                span: #43 bytes(880..891),
+                            },
+                            Punct {
+                                ch: '.',
+                                spacing: Alone,
+                                span: #43 bytes(880..891),
+                            },
+                            Ident {
+                                ident: "get",
+                                span: #0 bytes(911..914),
+                            },
+                            Group {
+                                delimiter: Parenthesis,
+                                stream: TokenStream [
+                                    Ident {
+                                        ident: "req",
+                                        span: #43 bytes(880..891),
+                                    },
+                                ],
+                                span: #43 bytes(880..891),
+                            },
+                            Literal { lit: Lit { kind: Str, symbol: "post", suffix: None }, span: Span { lo: BytePos(880), hi: BytePos(891), ctxt: #43 } },
+                            Punct {
+                                ch: '=',
+                                spacing: Joint,
+                                span: #43 bytes(880..891),
+                            },
+                            Punct {
+                                ch: '>',
+                                spacing: Alone,
+                                span: #43 bytes(880..891),
+                            },
+                            Ident {
+                                ident: "self",
+                                span: #43 bytes(880..891),
+                            },
+                            Punct {
+                                ch: '.',
+                                spacing: Alone,
+                                span: #43 bytes(880..891),
+                            },
+                            Ident {
+                                ident: "post",
+                                span: #0 bytes(1017..1021),
+                            },
+                            Group {
+                                delimiter: Parenthesis,
+                                stream: TokenStream [
+                                    Ident {
+                                        ident: "req",
+                                        span: #43 bytes(880..891),
+                                    },
+                                ],
+                                span: #43 bytes(880..891),
+                            },
+                        ],
+                        span: #43 bytes(880..891),
+                    },
+                ],
+                span: #43 bytes(880..891),
+            },
+        ],
+        span: #43 bytes(880..891),
+    },
+]
+{"message":"expected type, found `\"User\"`","code":null,"level":"error","spans":[{"file_name":"src/lib.rs","byte_start":880,"byte_end":891,"line_start":42,"line_end":42,"column_start":1,"column_end":12,"is_primary":true,"text":[{"text":"#[migrator]","highlight_start":1,"highlight_end":12}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"\u001b[0m\u001b[1m\u001b[38;5;9merror\u001b[0m\u001b[0m\u001b[1m: expected type, found `\"User\"`\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/lib.rs:42:1\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m42\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m#[migrator]\u001b[0m\n\u001b[0m   \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;9m^^^^^^^^^^^\u001b[0m\n\n"}
+{"message":"unused import: `std::fs::File`","code":{"code":"unused_imports","explanation":null},"level":"warning","spans":[{"file_name":"src/request.rs","byte_start":56,"byte_end":69,"line_start":3,"line_end":3,"column_start":5,"column_end":18,"is_primary":true,"text":[{"text":"use std::fs::File;","highlight_start":5,"highlight_end":18}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"`#[warn(unused_imports)]` on by default","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"remove the whole `use` item","code":null,"level":"help","spans":[{"file_name":"src/request.rs","byte_start":52,"byte_end":70,"line_start":3,"line_end":3,"column_start":1,"column_end":19,"is_primary":true,"text":[{"text":"use std::fs::File;","highlight_start":1,"highlight_end":19}],"label":null,"suggested_replacement":"","suggestion_applicability":"MachineApplicable","expansion":null}],"children":[],"rendered":null}],"rendered":"\u001b[0m\u001b[1m\u001b[33mwarning\u001b[0m\u001b[0m\u001b[1m: unused import: `std::fs::File`\u001b[0m\n\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/request.rs:3:5\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m3\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0muse std::fs::File;\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m    \u001b[0m\u001b[0m\u001b[1m\u001b[33m^^^^^^^^^^^^^\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m= \u001b[0m\u001b[0m\u001b[1mnote\u001b[0m\u001b[0m: `#[warn(unused_imports)]` on by default\u001b[0m\n\n"}
+{"message":"unused import: `std::io::prelude::*`","code":{"code":"unused_imports","explanation":null},"level":"warning","spans":[{"file_name":"src/request.rs","byte_start":75,"byte_end":94,"line_start":4,"line_end":4,"column_start":5,"column_end":24,"is_primary":true,"text":[{"text":"use std::io::prelude::*;","highlight_start":5,"highlight_end":24}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"remove the whole `use` item","code":null,"level":"help","spans":[{"file_name":"src/request.rs","byte_start":71,"byte_end":95,"line_start":4,"line_end":4,"column_start":1,"column_end":25,"is_primary":true,"text":[{"text":"use std::io::prelude::*;","highlight_start":1,"highlight_end":25}],"label":null,"suggested_replacement":"","suggestion_applicability":"MachineApplicable","expansion":null}],"children":[],"rendered":null}],"rendered":"\u001b[0m\u001b[1m\u001b[33mwarning\u001b[0m\u001b[0m\u001b[1m: unused import: `std::io::prelude::*`\u001b[0m\n\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/request.rs:4:5\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m4\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0muse std::io::prelude::*;\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m    \u001b[0m\u001b[0m\u001b[1m\u001b[33m^^^^^^^^^^^^^^^^^^^\u001b[0m\n\n"}
+{"message":"aborting due to previous error","code":null,"level":"error","spans":[],"children":[],"rendered":"\u001b[0m\u001b[1m\u001b[38;5;9merror\u001b[0m\u001b[0m\u001b[1m: aborting due to previous error\u001b[0m\n\n"}
