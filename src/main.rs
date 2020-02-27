@@ -1,7 +1,17 @@
-mod server;
-use server::Server;
+#[macro_use] extern crate somei_yo4no;
+use somei_yo4no::*;
+
+struct User;
+#[map_logics]
+impl User {
+    fn get(&self, id: u8) -> Result<DataFrame, MapErr>{
+        println!("get");
+        let mut df = DataFrame::new();
+        df.push(Value::from_u8(10));
+        Ok(df)
+    }
+}
 
 fn main() {
-    //let mut server=Server::new(8080);
-    //server.run();
+    run(8080);
 }
