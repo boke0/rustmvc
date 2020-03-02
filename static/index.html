@@ -4,18 +4,7 @@
     <meta charset="utf-8">
 </head>
 <body>
-    Hell world!
-    <button id="push">go</button>
-    <script>
-        let ws=new WebSocket("ws://localhost:8080");
-        ws.onopen=()=>{
-            console.log("connected!");
-        }
-        window.onload=()=>{
-            document.querySelector("#push").onclick=()=>{
-                ws.send("clicked!");
-            }
-        }
-    </script>
+    <div id="hello"></div>
+    <script src="main.js"></script>
 </body>
 </html>

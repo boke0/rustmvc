@@ -1,5 +1,3 @@
-extern crate sha1;
-extern crate base64;
 extern crate http;
 #[allow(unused_imports)] #[macro_use] pub extern crate codegen;
 mod dataframe;

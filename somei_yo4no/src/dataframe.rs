@@ -1,5 +1,3 @@
-extern crate rand;
-
 use std::mem;
 
 #[derive(Debug)]
